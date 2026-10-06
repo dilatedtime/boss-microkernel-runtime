@@ -2,6 +2,8 @@
 
 The shared runtime that BOSS loads into every out-of-process plugin child JVM.
 
+This repository is a fork of [risa-labs-inc/boss-microkernel-runtime](https://github.com/risa-labs-inc/boss-microkernel-runtime).
+
 This is not a plugin you install. It is the `main()` of the child process BossConsole spawns
 when a plugin declares `isolationMode: out-of-process`, and the gRPC bridge that lets code
 running in that child talk to the host as if it were in-process.
